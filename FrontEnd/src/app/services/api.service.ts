@@ -8,8 +8,8 @@ import { environment } from '../../environments/environment';
 
 @Injectable()
 export class ApiService {
-  apiUrl = 'http://localhost:8080/users/'
-  productApiUrl = 'http://localhost:8080/products/'
+  apiUrl = 'https://backprojet.herokuapp.com/users/'
+  productApiUrl = 'https://backprojet.herokuapp.com/products/'
   productsArray : Product[];
   constructor(private http:HttpClient) { }
     public getProducts():Observable<Product[]> {
