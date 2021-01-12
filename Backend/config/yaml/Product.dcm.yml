@@ -10,7 +10,7 @@ Product:
       id: true
       column: id
       generator:
-        strategy: AUTO
+        strategy: IDENTITY
   fields:
     nom:
       type: string
