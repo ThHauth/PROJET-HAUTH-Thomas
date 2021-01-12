@@ -1,0 +1,50 @@
+Product:
+  type: entity
+  table: product
+  id:
+    idProduct:
+      type: integer
+      nullable: false
+      options:
+        unsigned: false
+      id: true
+      column: id
+      generator:
+        strategy: AUTO
+  fields:
+    nom:
+      type: string
+      nullable: false
+      length: 256
+      options:
+        fixed: false
+    imageSource:
+      type: string
+      nullable: false
+      length: 1000
+      options:
+        fixed: false
+    description:
+      type: string
+      nullable: false
+      length: 1000
+      options:
+        fixed: false
+    prix:
+      type: float
+      nullable: false
+      options:
+        fixed: false
+    disponible:
+      type: boolean
+      nullable: false
+      options:
+        fixed: false
+    plateforme:
+      type: string
+      nullable: false
+      length: 256
+      options:
+        fixed: false
+    
+  lifecycleCallbacks: { }
